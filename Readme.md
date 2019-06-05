@@ -1,4 +1,5 @@
-# Reveal2gif
+# Reveal2gif
+
 ## What is RevealJS and what is pandoc?
 RevealJS allow you to make nice HTML/CSS slides. Personaly I use pandoc to make these slides.
 Pandoc allows you to write numbers of docs in markdown and to convert them in different formats. PDF, HTML, RTF, DOCX and... RevealJS.
@@ -61,16 +62,16 @@ theme: solarized
 
 ## Demo
 
-![GIF](./Slide.gif)
+![GIF](./Slides.gif)
 
 ## Usage
 
 ```bash
-pandoc --mathjax --self-contained -i -t revealjs  slide.md -o slide.html
 python3 ./reveal2gif.py -p ~/Desktop/slide.html -d ./geckodriver -o ./
 ```
 
-> Self-contained and mathjax option are not mandatoty
 > It's possible to add a -k option in second line for 2D slides show. RRRDD will press Right arrow three time then Down arrow two time and take a screenshot each time.
 
 The default use just press Right arrow until it's not possible anymore.
+
+For simplicity of use geckodriver is shipped inside the repository. But you may have to update it.
